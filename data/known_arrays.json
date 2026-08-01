@@ -1,1 +1,672 @@
-
+{
+  "marker": "COSTAS_KNOWN_ARRAYS_V1",
+  "schema_version": 1,
+  "indexing": "1-based",
+  "coordinate_convention": "(i, permutation[i]) with i in {1,...,n}",
+  "dataset_scope": {
+    "type": "curated_verified_seed_set",
+    "is_complete_array_database": false,
+    "purpose": [
+      "verifier regression tests",
+      "construction experiments",
+      "small examples for research agents",
+      "verified representatives for orders 27 through 31"
+    ],
+    "warning": "Absence from this file does not imply nonexistence. This file contains representative arrays, not all known arrays."
+  },
+  "maintenance_policy": {
+    "work_may_read": true,
+    "work_may_propose_additions": true,
+    "automatic_addition_allowed": false,
+    "addition_requirement": "A new record may be added only after both independent verifiers pass and the derivation or external source is recorded.",
+    "order_32_policy": "Any order-32 result must remain in candidates/ until independent verification and adversarial review are complete."
+  },
+  "complete_enumeration_counts": {
+    "complete_through_order": 29,
+    "counts_include_square_symmetries": true,
+    "counts": {
+      "1": 1,
+      "2": 2,
+      "3": 4,
+      "4": 12,
+      "5": 40,
+      "6": 116,
+      "7": 200,
+      "8": 444,
+      "9": 760,
+      "10": 2160,
+      "11": 4368,
+      "12": 7852,
+      "13": 12828,
+      "14": 17252,
+      "15": 19612,
+      "16": 21104,
+      "17": 18276,
+      "18": 15096,
+      "19": 10240,
+      "20": 6464,
+      "21": 3536,
+      "22": 2052,
+      "23": 872,
+      "24": 200,
+      "25": 88,
+      "26": 56,
+      "27": 204,
+      "28": 712,
+      "29": 164
+    }
+  },
+  "records": [
+    {
+      "id": "KA-001-N1-TRIVIAL",
+      "order": 1,
+      "permutation": [
+        1
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "trivial",
+        "parameters": {},
+        "derivation": "The unique order-1 permutation."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "080a9ed428559ef602668b4c00f114f1a11c3f6b02a435f0bdc154578e4d7f22"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-002-N2-W1-P3-G2-C0",
+      "order": 2,
+      "permutation": [
+        1,
+        2
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W1",
+        "parameters": {
+          "prime": 3,
+          "primitive_root": 2,
+          "shift_c": 0
+        },
+        "derivation": "pi(i)=g^(i-1+c) mod p for i=1,...,p-1."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "49a64717d5d4cb19952e6eac2946415cf6879adacf9908e7d872332d32c6e684"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-003-N3-W2-P5-G2",
+      "order": 3,
+      "permutation": [
+        1,
+        3,
+        2
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W2",
+        "parameters": {
+          "prime": 5,
+          "primitive_root": 2,
+          "source_shift_c": 0
+        },
+        "derivation": "Delete the first corner point of the W1 array with c=0 and subtract 1 from the remaining values."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "f1fd192552a68e948b1e1868df2c84c3d4a18e30a1a4567379562820ac1c4f42"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-004-N4-W1-P5-G2-C0",
+      "order": 4,
+      "permutation": [
+        1,
+        2,
+        4,
+        3
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W1",
+        "parameters": {
+          "prime": 5,
+          "primitive_root": 2,
+          "shift_c": 0
+        },
+        "derivation": "pi(i)=g^(i-1+c) mod p for i=1,...,p-1."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "378e4e678a99b16bd1f80ab3f9c9ca1b077c51d62217e10e85c5467bb659da2e"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-005-N6-W1-P7-G3-C0",
+      "order": 6,
+      "permutation": [
+        1,
+        3,
+        2,
+        6,
+        4,
+        5
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W1",
+        "parameters": {
+          "prime": 7,
+          "primitive_root": 3,
+          "shift_c": 0
+        },
+        "derivation": "pi(i)=g^(i-1+c) mod p for i=1,...,p-1."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "1479daf457e027a084d9b88bec591d93137414696c9ded503037bb0c1412a144"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-006-N10-W1-P11-G2-C0",
+      "order": 10,
+      "permutation": [
+        1,
+        2,
+        4,
+        8,
+        5,
+        10,
+        9,
+        7,
+        3,
+        6
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W1",
+        "parameters": {
+          "prime": 11,
+          "primitive_root": 2,
+          "shift_c": 0
+        },
+        "derivation": "pi(i)=g^(i-1+c) mod p for i=1,...,p-1."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "3548e174e66f29b8cde800d9dd3f70f1b80eabd49c7c0c8ef1f605d39253efa2"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-007-N12-W1-P13-G2-C0",
+      "order": 12,
+      "permutation": [
+        1,
+        2,
+        4,
+        8,
+        3,
+        6,
+        12,
+        11,
+        9,
+        5,
+        10,
+        7
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W1",
+        "parameters": {
+          "prime": 13,
+          "primitive_root": 2,
+          "shift_c": 0
+        },
+        "derivation": "pi(i)=g^(i-1+c) mod p for i=1,...,p-1."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "c1120a80fa131471308a437d971ee68e1a5a1ccf5f3a1765abb88f54aca869d0"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-008-N16-W1-P17-G3-C0",
+      "order": 16,
+      "permutation": [
+        1,
+        3,
+        9,
+        10,
+        13,
+        5,
+        15,
+        11,
+        16,
+        14,
+        8,
+        7,
+        4,
+        12,
+        2,
+        6
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W1",
+        "parameters": {
+          "prime": 17,
+          "primitive_root": 3,
+          "shift_c": 0
+        },
+        "derivation": "pi(i)=g^(i-1+c) mod p for i=1,...,p-1."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "f43ec14eb54b8935f7876fe9b6f6bb8f43f56a418fc611156b119b6787b39ff3"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-009-N18-W1-P19-G2-C0",
+      "order": 18,
+      "permutation": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        13,
+        7,
+        14,
+        9,
+        18,
+        17,
+        15,
+        11,
+        3,
+        6,
+        12,
+        5,
+        10
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W1",
+        "parameters": {
+          "prime": 19,
+          "primitive_root": 2,
+          "shift_c": 0
+        },
+        "derivation": "pi(i)=g^(i-1+c) mod p for i=1,...,p-1."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "51192d4b133a16f9ab213168a76cd32c483a1b5b7b472ebe4e944d0ba16b2f0b"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-010-N22-W1-P23-G5-C0",
+      "order": 22,
+      "permutation": [
+        1,
+        5,
+        2,
+        10,
+        4,
+        20,
+        8,
+        17,
+        16,
+        11,
+        9,
+        22,
+        18,
+        21,
+        13,
+        19,
+        3,
+        15,
+        6,
+        7,
+        12,
+        14
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W1",
+        "parameters": {
+          "prime": 23,
+          "primitive_root": 5,
+          "shift_c": 0
+        },
+        "derivation": "pi(i)=g^(i-1+c) mod p for i=1,...,p-1."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "0f3ea2c9d77cd2479dc20ed65da32a94447c0e34ad7d2c0656a052c3b01596e1"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-011-N27-W2-P29-G2",
+      "order": 27,
+      "permutation": [
+        1,
+        3,
+        7,
+        15,
+        2,
+        5,
+        11,
+        23,
+        18,
+        8,
+        17,
+        6,
+        13,
+        27,
+        26,
+        24,
+        20,
+        12,
+        25,
+        22,
+        16,
+        4,
+        9,
+        19,
+        10,
+        21,
+        14
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W2",
+        "parameters": {
+          "prime": 29,
+          "primitive_root": 2,
+          "source_shift_c": 0
+        },
+        "derivation": "Delete the first corner point of the W1 array with c=0 and subtract 1 from the remaining values."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "b2d7cb90d791704bbd20f87e557b728f49dc8c521fd2e81bbf068dd3c28b344c"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-012-N28-W1-P29-G2-C0",
+      "order": 28,
+      "permutation": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        3,
+        6,
+        12,
+        24,
+        19,
+        9,
+        18,
+        7,
+        14,
+        28,
+        27,
+        25,
+        21,
+        13,
+        26,
+        23,
+        17,
+        5,
+        10,
+        20,
+        11,
+        22,
+        15
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W1",
+        "parameters": {
+          "prime": 29,
+          "primitive_root": 2,
+          "shift_c": 0
+        },
+        "derivation": "pi(i)=g^(i-1+c) mod p for i=1,...,p-1."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "daa06e015c475e0027c1c0834c52f17f9939c65947a845b971ef64c28118987b"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-013-N29-W2-P31-G3",
+      "order": 29,
+      "permutation": [
+        2,
+        8,
+        26,
+        18,
+        25,
+        15,
+        16,
+        19,
+        28,
+        24,
+        12,
+        7,
+        23,
+        9,
+        29,
+        27,
+        21,
+        3,
+        11,
+        4,
+        14,
+        13,
+        10,
+        1,
+        5,
+        17,
+        22,
+        6,
+        20
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W2",
+        "parameters": {
+          "prime": 31,
+          "primitive_root": 3,
+          "source_shift_c": 0
+        },
+        "derivation": "Delete the first corner point of the W1 array with c=0 and subtract 1 from the remaining values."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "21e2827d4f3f933607aaf78e07c475e44e0352bdd82f94ae9a49a068036b8f08"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-014-N30-W1-P31-G3-C0",
+      "order": 30,
+      "permutation": [
+        1,
+        3,
+        9,
+        27,
+        19,
+        26,
+        16,
+        17,
+        20,
+        29,
+        25,
+        13,
+        8,
+        24,
+        10,
+        30,
+        28,
+        22,
+        4,
+        12,
+        5,
+        15,
+        14,
+        11,
+        2,
+        6,
+        18,
+        23,
+        7,
+        21
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W1",
+        "parameters": {
+          "prime": 31,
+          "primitive_root": 3,
+          "shift_c": 0
+        },
+        "derivation": "pi(i)=g^(i-1+c) mod p for i=1,...,p-1."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "f58c281daf644a928544e309dea7e1d14c584c4b63c61d7385b7b9c282b67a36"
+      },
+      "dataset_role": "verified_representative"
+    },
+    {
+      "id": "KA-015-N31-W0-P31-G3-C3-LOWERLEFT",
+      "order": 31,
+      "permutation": [
+        1,
+        28,
+        20,
+        27,
+        17,
+        18,
+        21,
+        30,
+        26,
+        14,
+        9,
+        25,
+        11,
+        31,
+        29,
+        23,
+        5,
+        13,
+        6,
+        16,
+        15,
+        12,
+        3,
+        7,
+        19,
+        24,
+        8,
+        22,
+        2,
+        4,
+        10
+      ],
+      "indexing": "1-based",
+      "coordinate_convention": "(i, permutation[i])",
+      "construction": {
+        "family": "W0",
+        "parameters": {
+          "prime": 31,
+          "primitive_root": 3,
+          "shift_c": 3,
+          "added_corner": "lower_left"
+        },
+        "derivation": "Generate the order-30 W1 array with p=31, g=3, c=3; embed it one row and one column upward/rightward; add the new point at (1,1)."
+      },
+      "verification": {
+        "reference_verifier": "pass",
+        "independent_verifier": "pass",
+        "is_permutation": true,
+        "is_costas": true,
+        "permutation_sha256": "074c392ed4aa4228a073ea576bd4d2980999ad6e696244838e633666250c351b"
+      },
+      "dataset_role": "verified_representative"
+    }
+  ]
+}
